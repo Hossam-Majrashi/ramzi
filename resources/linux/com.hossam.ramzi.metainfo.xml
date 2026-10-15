@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.hossam.ramzi</id>
+  <name>Ramzi</name>
+  <summary>Multi-platform app icon simulator and exporter</summary>
+  <summary xml:lang="ar">محاكي ومُصدِّر أيقونات التطبيقات متعدد المنصات</summary>
+  <description>
+    <p>
+      Ramzi lets developers preview a single source icon on every major
+      platform and game engine — Android, iOS, Linux, macOS, Windows,
+      watchOS, tvOS, Android TV, Godot, Unity and Unreal Engine — adjust
+      its scale and positioning independently per platform, and export
+      perfectly-sized, spec-compliant icon assets for each target.
+    </p>
+    <p>
+      Ramzi works fully offline: no network calls, no accounts, no
+      telemetry. All projects and exports stay in local storage.
+    </p>
+  </description>
+  <launchable type="desktop-id">com.hossam.ramzi.desktop</launchable>
+  <developer>
+    <name>Hossam</name>
+  </developer>
+  <project_license>MIT</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+  <categories>
+    <category>Development</category>
+    <category>Graphics</category>
+  </categories>
+  <keywords>
+    <keyword>icon</keyword>
+    <keyword>icons</keyword>
+    <keyword>launcher</keyword>
+    <keyword>flutter</keyword>
+    <keyword>export</keyword>
+  </keywords>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="1.0.0" date="2026-08-25">
+      <description>
+        <p>Initial release.</p>
+      </description>
+    </release>
+  </releases>
+  <provides>
+    <binary>ramzi</binary>
+  </provides>
+</component>

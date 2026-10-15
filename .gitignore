@@ -1,0 +1,71 @@
+# ملفات مؤقتة وسجلات / Temporary files and logs
+*.class
+*.log
+*.pyc
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+__pycache__/
+migrate_working_dir/
+
+# إعدادات المحررات المحلية / Local editor settings
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+
+# ملفات Flutter وDart المولّدة / Generated Flutter and Dart files
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+.widget_preview/
+
+# يُحفظ ملف قفل الاعتماديات للتطبيق / Keep pubspec.lock for reproducible app builds
+
+# رموز التصحيح وخرائط التعتيم / Debug symbols and obfuscation maps
+app.*.symbols
+app.*.map.json
+
+# ملفات Android المحلية ومخرجات البناء / Local Android files and build outputs
+/android/.gradle/
+/android/.kotlin/
+/android/local.properties
+/android/app/debug/
+/android/app/profile/
+/android/app/release/
+
+# أسرار البيئة ومفاتيح التوقيع / Environment secrets and signing keys
+.env
+.env.*
+!.env.example
+!.env.sample
+/android/key.properties
+*.jks
+*.keystore
+
+# مخرجات تحزيم رمزي وذاكرة Flatpak / Ramzi packaging outputs and Flatpak cache
+/dist/
+.flatpak-builder/
+/flatpak/.flatpak-builder/
+/flatpak/build-dir/
+/flatpak/repo/

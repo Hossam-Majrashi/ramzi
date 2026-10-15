@@ -1,0 +1,5 @@
+{
+    "python.languageServer": "Default",
+    "explorer.confirmDelete": false,
+    "explorer.confirmPasteNative": false
+}

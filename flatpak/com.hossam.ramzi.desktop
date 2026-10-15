@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Ramzi
+GenericName=Icon Studio
+Comment=Multi-platform app icon simulator and exporter
+Comment[ar]=محاكي ومُصدِّر أيقونات التطبيقات متعدد المنصات
+Exec=ramzi %F
+Icon=com.hossam.ramzi
+Categories=Development;Graphics;
+Terminal=false
+StartupNotify=true
+StartupWMClass=ramzi
+MimeType=image/png;image/jpeg;image/webp;
+Keywords=icon;icons;flutter;launcher;export;

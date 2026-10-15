@@ -1,0 +1,49 @@
+{
+  "app-id": "com.hossam.ramzi",
+  "runtime": "org.freedesktop.Platform",
+  "runtime-version": "24.08",
+  "sdk": "org.freedesktop.Sdk",
+  "command": "ramzi",
+  "separate-locales": false,
+  "finish-args": [
+    "--share=ipc",
+    "--socket=wayland",
+    "--socket=fallback-x11",
+    "--filesystem=home",
+    "--talk-name=org.freedesktop.Notifications"
+  ],
+  "modules": [
+    {
+      "name": "ramzi",
+      "buildsystem": "simple",
+      "build-commands": [
+        "mkdir -p /app/bin /app/lib/ramzi",
+        "cp -r ramzi-bundle/. /app/lib/ramzi/",
+        "cat > /app/bin/ramzi <<'EOF'\n#!/bin/sh\nexec /app/lib/ramzi/ramzi \"$@\"\nEOF",
+        "chmod 755 /app/bin/ramzi",
+        "install -Dm644 com.hossam.ramzi.desktop /app/share/applications/com.hossam.ramzi.desktop",
+        "install -Dm644 com.hossam.ramzi.png /app/share/icons/hicolor/256x256/apps/com.hossam.ramzi.png",
+        "install -Dm644 com.hossam.ramzi.metainfo.xml /app/share/metainfo/com.hossam.ramzi.metainfo.xml"
+      ],
+      "sources": [
+        {
+          "type": "dir",
+          "path": "../build/linux/x64/release/bundle",
+          "dest": "ramzi-bundle"
+        },
+        {
+          "type": "file",
+          "path": "com.hossam.ramzi.desktop"
+        },
+        {
+          "type": "file",
+          "path": "com.hossam.ramzi.png"
+        },
+        {
+          "type": "file",
+          "path": "com.hossam.ramzi.metainfo.xml"
+        }
+      ]
+    }
+  ]
+}
